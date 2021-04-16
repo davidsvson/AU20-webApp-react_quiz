@@ -31,7 +31,7 @@ const Game = ({ answeredCorrectly, showResult }) => {
     const options = q.answers.map((answer, index) => (
         <p className={"option" + ((decided && index === q.correct) ? ' correct' : '')}  key={answer}>
             <label>
-                <input type="radio"
+                <input type="radio"  name="question" disabled={decided}
                     onClick={() => setSelectedAnswer(index)} />
                 {answer}
             </label>
@@ -43,8 +43,8 @@ const Game = ({ answeredCorrectly, showResult }) => {
             <h2>Question {currentQuestion} of {questions.length} </h2>
             <h3>{q.question}</h3>
             {options}
-
-            <button onClick={handleDecided}>Answer</button>
+            
+            <button disabled={decided} onClick={handleDecided}>Answer</button>
         </section>
     )
 
