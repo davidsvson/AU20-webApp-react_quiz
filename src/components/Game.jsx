@@ -2,7 +2,7 @@ import { useState } from "react";
 
 
 
-const Game = ({ answeredCorrectly }) => {
+const Game = ({ answeredCorrectly, showResult }) => {
     const questions = getQuestions();
     const [currentQuestion, setQuerrentQuestion ] = useState(1)
     const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -15,10 +15,14 @@ const Game = ({ answeredCorrectly }) => {
         if( selectedAnswer === q.correct) {
             answeredCorrectly(); // report score back to App
         }
-        setTimeout(() => {       
-            setQuerrentQuestion(currentQuestion + 1);
-            setSelectedAnswer(null);
-            setDecided(false);
+        setTimeout(() => {      
+            if( currentQuestion === questions.length) {
+                showResult();
+            } else {
+                setQuerrentQuestion(currentQuestion + 1);
+                setSelectedAnswer(null);
+                setDecided(false);
+            }
         }, 2000);
     }
 
