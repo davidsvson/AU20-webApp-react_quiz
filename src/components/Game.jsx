@@ -26,7 +26,15 @@ const Game = ({ answeredCorrectly, showResult }) => {
         }, 2000);
     }
 
-    //let a = bool ? 'hej' : 'då'
+    //let b = true;
+    //let a = b ? 'hej' : 'då'; om b är true så blir a= 'hej' annars blir a='då'
+
+
+    // map på en lista
+    // const list = [1, 5, 7, 4];
+    // const elements = list.map(item => <li key={item}> {item} </li>);
+    // return (<ul> {elements} </ul>);
+
 
     const options = q.answers.map((answer, index) => (
         <p className={"option" + ((decided && index === q.correct) ? ' correct' : '')}  key={answer}>

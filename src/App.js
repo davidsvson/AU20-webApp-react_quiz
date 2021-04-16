@@ -32,6 +32,7 @@ function App() {
   }
 
   return (
+    
     <div className="App">
       <header className="App-header">
           <h1>Quiz</h1>
@@ -41,6 +42,7 @@ function App() {
         Score: {score}
       </main>
     </div>
+    
   );
 }
 
