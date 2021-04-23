@@ -8,10 +8,14 @@ const Game = ({ answeredCorrectly }) => {
     const [decided, setDecided] = useState(false);
 
     let params = useParams();
+    let currentquestion = '1';
+    if ('currentquestion' in params) {
+        if (params.currentquestion > 0 && params.currentquestion < questions.length) {
+            currentquestion = params.currentquestion;
+        }
+    } 
 
-   
-
-    let { currentquestion } = useParams();
+    //let { currentquestion } = useParams();
     
     const q = questions[currentquestion - 1 ];
 
@@ -23,7 +27,7 @@ const Game = ({ answeredCorrectly }) => {
             answeredCorrectly(); // report score back to App
         }
         setTimeout(() => {      
-            if( currentquestion == questions.length) {
+            if( Number(currentquestion) === questions.length) {
                 history.push("/result");
             } else {
                 history.push("/game/"+(Number(currentquestion)+1))

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import Game from './components/Game';
@@ -24,6 +23,11 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Welcome />
+            </Route>
+            <Route exact path="/game">
+              <Game 
+                answeredCorrectly={() => setScore(score + 1)}
+              />
             </Route>
             <Route path="/game/:currentquestion">
               <Game 
