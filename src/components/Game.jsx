@@ -9,16 +9,9 @@ const Game = ({ answeredCorrectly }) => {
 
     let params = useParams();
 
-    let currentquestion;
-    if (typeof params.currentquestion !== 'undefined' ) {
-        currentquestion = params.currentquestion;
-        console.log('defined');
-    } else {
-        currentquestion = '1';
-        console.log('undefined');
-    }
+   
 
-    //let { currentquestion } = useParams();
+    let { currentquestion } = useParams();
     
     const q = questions[currentquestion - 1 ];
 
