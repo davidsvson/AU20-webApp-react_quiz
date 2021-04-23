@@ -1,14 +1,28 @@
 import { useState } from "react";
+import {useHistory, useParams} from 'react-router-dom';
 
 
-
-const Game = ({ answeredCorrectly, showResult }) => {
+const Game = ({ answeredCorrectly }) => {
     const questions = getQuestions();
-    const [currentQuestion, setQuerrentQuestion ] = useState(1)
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [decided, setDecided] = useState(false);
 
-    const q = questions[currentQuestion - 1 ];
+    let params = useParams();
+
+    let currentquestion;
+    if (typeof params.currentquestion !== 'undefined' ) {
+        currentquestion = params.currentquestion;
+        console.log('defined');
+    } else {
+        currentquestion = '1';
+        console.log('undefined');
+    }
+
+    //let { currentquestion } = useParams();
+    
+    const q = questions[currentquestion - 1 ];
+
+    const history = useHistory();
 
     const handleDecided = () => {
         setDecided(true);
@@ -16,14 +30,14 @@ const Game = ({ answeredCorrectly, showResult }) => {
             answeredCorrectly(); // report score back to App
         }
         setTimeout(() => {      
-            if( currentQuestion === questions.length) {
-                showResult();
+            if( currentquestion == questions.length) {
+                history.push("/result");
             } else {
-                setQuerrentQuestion(currentQuestion + 1);
+                history.push("/game/"+(Number(currentquestion)+1))
                 setSelectedAnswer(null);
                 setDecided(false);
             }
-        }, 2000);
+        }, 100);
     }
 
     //let b = true;
@@ -48,7 +62,7 @@ const Game = ({ answeredCorrectly, showResult }) => {
 
     return (
         <section className="game">
-            <h2>Question {currentQuestion} of {questions.length} </h2>
+            <h2>Question {currentquestion} of {questions.length} </h2>
             <h3>{q.question}</h3>
             {options}
             

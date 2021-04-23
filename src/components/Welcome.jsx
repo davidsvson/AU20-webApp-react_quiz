@@ -1,9 +1,12 @@
+import {Link} from 'react-router-dom';
 
-const Welcome = ({ nextScreen }) => (
+const Welcome = () => (
     <section>
         <h2>Välkommen till denna Quiz!</h2>
         <p>Vill du sätta igång?</p>
-        <button onClick= {nextScreen}>Ja!</button>
+        <Link to="/game/1"> 
+            <button >Ja!</button>
+        </Link>
     </section>
 )
 
