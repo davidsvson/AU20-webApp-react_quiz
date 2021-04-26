@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Game from './components/Game';
 import Welcome from './components/Welcome';
 import Result from './components/Result';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -12,6 +12,8 @@ function App() {
     setScore(0);
   }
 
+  //console.log("version: ", 4 );
+
   return (
     
     <div className="App">
@@ -19,7 +21,7 @@ function App() {
           <h1>Quiz</h1>
       </header>
       <main>
-        <Router>
+        <Router >
           <Switch>
             <Route exact path="/">
               <Welcome />

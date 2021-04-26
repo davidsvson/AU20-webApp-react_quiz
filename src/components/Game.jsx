@@ -10,7 +10,7 @@ const Game = ({ answeredCorrectly }) => {
     let params = useParams();
     let currentquestion = '1';
     if ('currentquestion' in params) {
-        if (params.currentquestion > 0 && params.currentquestion < questions.length) {
+        if (params.currentquestion > 0 && params.currentquestion <= questions.length) {
             currentquestion = params.currentquestion;
         }
     } 
