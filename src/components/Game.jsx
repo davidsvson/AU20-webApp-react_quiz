@@ -77,7 +77,7 @@ function getQuestions() {
     return [
         {
             question: 'När är det julafton?',
-            answers: ['24 maj', '24 dec', '3 nov'],
+            answers: ['24 maj', '24 dec', '8 nov'],
             correct: 1
         },
         {

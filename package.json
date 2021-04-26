@@ -1,5 +1,6 @@
 {
   "name": "react-quiz",
+  "homepage": "http://davidsvson.github.io/AU20-webApp-react_quiz/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
