@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AU20-webApp-react_quiz/static/css/main.3f8028b7.chunk.css",
-    "main.js": "/AU20-webApp-react_quiz/static/js/main.fbfc092f.chunk.js",
-    "main.js.map": "/AU20-webApp-react_quiz/static/js/main.fbfc092f.chunk.js.map",
+    "main.js": "/AU20-webApp-react_quiz/static/js/main.d8796e57.chunk.js",
+    "main.js.map": "/AU20-webApp-react_quiz/static/js/main.d8796e57.chunk.js.map",
     "runtime-main.js": "/AU20-webApp-react_quiz/static/js/runtime-main.23345533.js",
     "runtime-main.js.map": "/AU20-webApp-react_quiz/static/js/runtime-main.23345533.js.map",
     "static/js/2.6427bfc7.chunk.js": "/AU20-webApp-react_quiz/static/js/2.6427bfc7.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.23345533.js",
     "static/js/2.6427bfc7.chunk.js",
     "static/css/main.3f8028b7.chunk.css",
-    "static/js/main.fbfc092f.chunk.js"
+    "static/js/main.d8796e57.chunk.js"
   ]
 }
