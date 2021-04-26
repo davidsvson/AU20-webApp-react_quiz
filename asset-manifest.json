@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f8028b7.chunk.css",
-    "main.js": "/static/js/main.083bbbff.chunk.js",
-    "main.js.map": "/static/js/main.083bbbff.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.33e62734.js",
-    "runtime-main.js.map": "/static/js/runtime-main.33e62734.js.map",
-    "static/js/2.6427bfc7.chunk.js": "/static/js/2.6427bfc7.chunk.js",
-    "static/js/2.6427bfc7.chunk.js.map": "/static/js/2.6427bfc7.chunk.js.map",
-    "static/js/3.c75e321b.chunk.js": "/static/js/3.c75e321b.chunk.js",
-    "static/js/3.c75e321b.chunk.js.map": "/static/js/3.c75e321b.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.3f8028b7.chunk.css.map": "/static/css/main.3f8028b7.chunk.css.map",
-    "static/js/2.6427bfc7.chunk.js.LICENSE.txt": "/static/js/2.6427bfc7.chunk.js.LICENSE.txt"
+    "main.css": "/AU20-webApp-react_quiz/static/css/main.3f8028b7.chunk.css",
+    "main.js": "/AU20-webApp-react_quiz/static/js/main.b7a76716.chunk.js",
+    "main.js.map": "/AU20-webApp-react_quiz/static/js/main.b7a76716.chunk.js.map",
+    "runtime-main.js": "/AU20-webApp-react_quiz/static/js/runtime-main.6ac44536.js",
+    "runtime-main.js.map": "/AU20-webApp-react_quiz/static/js/runtime-main.6ac44536.js.map",
+    "static/js/2.fec952d9.chunk.js": "/AU20-webApp-react_quiz/static/js/2.fec952d9.chunk.js",
+    "static/js/2.fec952d9.chunk.js.map": "/AU20-webApp-react_quiz/static/js/2.fec952d9.chunk.js.map",
+    "static/js/3.c08fae49.chunk.js": "/AU20-webApp-react_quiz/static/js/3.c08fae49.chunk.js",
+    "static/js/3.c08fae49.chunk.js.map": "/AU20-webApp-react_quiz/static/js/3.c08fae49.chunk.js.map",
+    "index.html": "/AU20-webApp-react_quiz/index.html",
+    "static/css/main.3f8028b7.chunk.css.map": "/AU20-webApp-react_quiz/static/css/main.3f8028b7.chunk.css.map",
+    "static/js/2.fec952d9.chunk.js.LICENSE.txt": "/AU20-webApp-react_quiz/static/js/2.fec952d9.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/AU20-webApp-react_quiz/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.33e62734.js",
-    "static/js/2.6427bfc7.chunk.js",
+    "static/js/runtime-main.6ac44536.js",
+    "static/js/2.fec952d9.chunk.js",
     "static/css/main.3f8028b7.chunk.css",
-    "static/js/main.083bbbff.chunk.js"
+    "static/js/main.b7a76716.chunk.js"
   ]
 }
